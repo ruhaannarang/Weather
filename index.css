@@ -12,7 +12,7 @@ nav{
     margin: 15px;
     background-color: rgba(0, 255, 255, 0.327);
     border-radius: 15px;
-    border: 1px solid #ffffff9d;
+    border: 2px solid #ffffff9d;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,5 +63,20 @@ nav{
     
 }
 .today{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.time{
+    /* border: 1px solid wheat; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.heading{
     border-bottom: 1px solid #ffffff9d;
 }
