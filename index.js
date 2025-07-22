@@ -1,5 +1,5 @@
 const apiKey = "6748841ce56142949c985227252107";
-const city = "Jammu";
+const city = prompt("Enter a name of a city");
 const Currenturl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
 async function currentTemp (){
@@ -25,10 +25,10 @@ async function forecast(){
     let forecastData=await getForecast.json()
     console.log(forecastData.forecast.forecastday[0])
     let forecastTag =document.body.querySelector(".forecast")
-    forecastTag.insertAdjacentHTML("afterbegin",`<p>Date: ${forecastData.forecast.forecastday[0].date}</p>
-                                            <p> Max Temperature: ${forecastData.forecast.forecastday[0].day.maxtemp_c}</p>
-                                            <p> Min Temperature: ${forecastData.forecast.forecastday[0].day.mintemp_c}</p>
-                                            <p> Avg Temperature: ${forecastData.forecast.forecastday[0].day.avgtemp_c}</p>
+    forecastTag.insertAdjacentHTML("afterbegin",`<p class="todayStat">Date: ${forecastData.forecast.forecastday[0].date}</p>
+                                            <p class="todayStat"> Max Temperature: ${forecastData.forecast.forecastday[0].day.maxtemp_c}</p>
+                                            <p class="todayStat"> Min Temperature: ${forecastData.forecast.forecastday[0].day.mintemp_c}</p>
+                                            <p class="todayStat"> Avg Temperature: ${forecastData.forecast.forecastday[0].day.avgtemp_c}</p>
                                             `)
     let forecastTime =document.body.querySelector(".time")
     for(let i=0;i<=23;i++){

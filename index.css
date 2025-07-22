@@ -54,7 +54,7 @@ nav{
 }
 .forecast{
     border: 1px solid #ffffff9d;
-    height: 600px;
+    min-height: 600px;
     border-radius: 50px;
     padding: 20px;
     display: flex;
@@ -63,10 +63,11 @@ nav{
     
 }
 .today{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px;
     /* align-items: center;
     justify-content: space-between; */
 }
@@ -78,5 +79,10 @@ nav{
     
 }
 .heading{
-    border-bottom: 1px solid #ffffff9d;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #ffffff9d; */
+    text-align: center;
+}
+.todayStat{
+    font-size: larger;
 }
