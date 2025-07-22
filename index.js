@@ -1,5 +1,5 @@
 const apiKey = "6748841ce56142949c985227252107";
-const city = prompt("Enter a name of a city");
+const city = prompt("Enter the name of your city");
 const Currenturl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
 async function currentTemp (){
