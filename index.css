@@ -2,18 +2,21 @@
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff9d;
+    /* color: #ffffff9d; */
     scrollbar-width: none;
 }
 
 body {
     background-color: rgb(10, 18, 67);
+    background-size: cover;
+    overflow: scroll;
+    /* position: fixed; */
 }
 
 nav {
     height: 60px;
     margin: 15px;
-    background-color: rgba(0, 255, 255, 0.327);
+    background-color: rgba(0, 255, 255, 0.082);
     border-radius: 15px;
     border: 2px solid #ffffff9d;
     display: flex;
@@ -21,6 +24,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px;
+    color: #ffffff9d;
 }
 
 .mainContent {
@@ -47,12 +51,14 @@ nav {
     padding-top: 40px;
     font-size: 3rem;
     text-align: center;
+    color: white;
 }
 
 .temp {
     padding-top: 20px;
     font-size: xx-large;
     text-align: center;
+    color: white;
 }
 
 .weatherIMG {
@@ -94,6 +100,9 @@ nav {
     flex-direction: column;
     /* width: 100px; */
     text-align: center;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+    
 
 }
 
@@ -101,15 +110,19 @@ nav {
     padding-bottom: 10px;
     /* border-bottom: 1px solid #ffffff9d; */
     text-align: center;
+       color: white;
+    /* text-shadow: black 1px 1px 1px; */
     text-shadow: black 5px 5px 5px;
 }
 
 .todayStat {
     font-size: larger;
+    color: white;
+    text-shadow: black 1px 1px 1px;
 }
 
 .search {
-    background-color: rgb(10, 18, 67);
+    background-color: rgba(0, 255, 255, 0);
     padding: 10px;
     border-radius: 15px;
     border: 1px solid white;
@@ -120,13 +133,15 @@ nav {
     width: 300px;
     color: rgb(10, 18, 67);
     font-size: larger;
-    background-color: #ffffff9d;
-    border: 2px solid rgb(10, 18, 67);
+    background-color: #ffffff00;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .tempC {
     /* width: 100px; */
     text-align: center;
+       color: white;
+    text-shadow: black 1px 1px 1px;
 }
 
 .overall {
@@ -147,6 +162,17 @@ nav {
 #TodayDate {
     text-shadow: black 2px 2px 2px;
     font-size: x-large;
+}
+#srcbtn{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+.temp-text{
+    color: white;
+    text-shadow: black 1px 1px 8px;
 }
 
 @media only screen and (max-width: 600px) {

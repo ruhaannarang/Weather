@@ -16,9 +16,9 @@ function getValue(){
       currentTemp.innerHTML = "";
       currentTemp.innerHTML=` <h2 class="location">${data.location.name}, ${data.location.region}</h2>
           <div class="temp">
-            <p ><strong>Temperature:</strong> ${data.current.temp_c}°C</p>
-            <p ><strong>Condition:</strong> ${data.current.condition.text}</p>
-            <p ><strong>Humidity:</strong> ${data.current.humidity}%</p>
+            <p class="temp-text" ><strong class="temp-text" >Temperature:</strong> ${data.current.temp_c}°C</p>
+            <p class="temp-text" ><strong class="temp-text" >Condition:</strong> ${data.current.condition.text}</p>
+            <p class="temp-text" ><strong class="temp-text" >Humidity:</strong> ${data.current.humidity}%</p>
             <img src="https:${data.current.condition.icon}" alt="Weather Icon" class="weatherIMG"  />
           </div>`
   
