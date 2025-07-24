@@ -3,7 +3,7 @@ function getValue(){
   document.body.querySelector(".mainContent").style.display="block"
   const apiKey = "6748841ce56142949c985227252107";
   const city = document.body.querySelector("#searchCity").value
-  const Currenturl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+  const Currenturl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
   async function currentTemp (){
       let getTemperature=await fetch(Currenturl);
@@ -24,7 +24,7 @@ function getValue(){
   
   }
   
-  const forecastURL = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}`;
+  const forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}`;
   async function forecast(){
       let getForecast=await fetch(forecastURL);
       let forecastData=await getForecast.json()
